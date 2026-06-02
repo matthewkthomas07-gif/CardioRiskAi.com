@@ -1,0 +1,66 @@
+[
+  {
+    "term": "Cardiovascular risk",
+    "plain": "How likely the model thinks heart or blood-vessel disease may be present, shown as a percentage. Not a doctor's diagnosis."
+  },
+  {
+    "term": "Age",
+    "plain": "Your age in years. Older age can increase heart-disease risk in population studies."
+  },
+  {
+    "term": "Sex",
+    "plain": "Biological sex coded as 0 (female) or 1 (male) in this dataset. Used because risk patterns differ between groups in the research data."
+  },
+  {
+    "term": "Chest pain type (ChestPain)",
+    "plain": "What kind of chest discomfort you have: 0 = typical angina (often with exertion), 1 = atypical, 2 = non-anginal, 3 = no chest pain symptoms."
+  },
+  {
+    "term": "Systolic blood pressure (SystolicBP)",
+    "plain": "The top number in a blood pressure reading (pressure when the heart beats). Example: 120 in \"120/80.\""
+  },
+  {
+    "term": "Serum cholesterol (Cholesterol)",
+    "plain": "A blood fat measured in mg/dL. Very high values are linked to artery plaque over time."
+  },
+  {
+    "term": "Fasting blood sugar (FastingBS)",
+    "plain": "Whether blood sugar was over 120 mg/dL after fasting: 0 = no, 1 = yes. High values can relate to diabetes risk."
+  },
+  {
+    "term": "Resting ECG (RestingECG)",
+    "plain": "A heart tracing at rest: 0 = normal, 1 = ST-T wave abnormality, 2 = possible left ventricular hypertrophy (thickened heart muscle)."
+  },
+  {
+    "term": "Maximum heart rate (MaxHR)",
+    "plain": "The highest heart rate reached during an exercise stress test. Lower than expected for age can sometimes signal heart strain."
+  },
+  {
+    "term": "Exercise angina (ExerciseAngina)",
+    "plain": "Chest pain triggered by exercise: 0 = no, 1 = yes."
+  },
+  {
+    "term": "Oldpeak (ST depression)",
+    "plain": "How much the ST segment dips on an exercise ECG compared with rest. Higher numbers can mean more stress-related changes."
+  },
+  {
+    "term": "ST slope (Slope)",
+    "plain": "Shape of the ST segment during peak exercise: 0 = upsloping, 1 = flat, 2 = downsloping (often considered more concerning)."
+  },
+  {
+    "term": "Major vessels (NumVessels)",
+    "plain": "Number of major heart arteries (0–3) that looked narrowed on an imaging test called fluoroscopy."
+  },
+  {
+    "term": "Thalassemia test (Thal)",
+    "plain": "Blood-flow pattern on a nuclear scan: 1 = normal, 2 = fixed defect, 3 = reversible defect (reversible can mean reduced flow under stress)."
+  },
+  {
+    "term": "Angina",
+    "plain": "Chest pain or pressure, often from reduced blood flow to the heart muscle."
+  },
+  {
+    "term": "Random Forest / machine learning",
+    "plain": "A computer method that learns patterns from many past patient records to estimate risk on new inputs."
+  }
+]

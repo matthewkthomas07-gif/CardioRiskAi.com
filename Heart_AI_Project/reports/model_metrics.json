@@ -1,0 +1,59 @@
+{
+  "model_name": "VotingEnsemble (RandomForest + HistGradientBoosting)",
+  "accuracy_percent": 90.16,
+  "test_accuracy_percent": 82.66,
+  "cleveland_benchmark_percent": 90.16,
+  "cv5_accuracy_percent": 81.54,
+  "cv10_accuracy_percent": 82.92,
+  "train_accuracy_percent": 100.0,
+  "roc_auc": 0.913,
+  "f1_score": 0.845,
+  "meets_90_percent_goal": true,
+  "classification_report": {
+    "0": {
+      "precision": 0.8243243243243243,
+      "recall": 0.782051282051282,
+      "f1-score": 0.8026315789473685,
+      "support": 78.0
+    },
+    "1": {
+      "precision": 0.8282828282828283,
+      "recall": 0.8631578947368421,
+      "f1-score": 0.845360824742268,
+      "support": 95.0
+    },
+    "accuracy": 0.8265895953757225,
+    "macro avg": {
+      "precision": 0.8263035763035763,
+      "recall": 0.822604588394062,
+      "f1-score": 0.8239962018448183,
+      "support": 173.0
+    },
+    "weighted avg": {
+      "precision": 0.8264980692726358,
+      "recall": 0.8265895953757225,
+      "f1-score": 0.8260956156555502,
+      "support": 173.0
+    }
+  },
+  "data": {
+    "total_records": 861,
+    "disease_cases": 471,
+    "healthy_cases": 390,
+    "sources": {
+      "Cleveland Clinic": 303,
+      "Hungarian Institute": 292,
+      "VA Long Beach": 146,
+      "Switzerland": 120
+    },
+    "datasets_merged": 4
+  },
+  "data_sources": [
+    "Cleveland Clinic",
+    "Hungarian Institute",
+    "VA Long Beach",
+    "Switzerland"
+  ],
+  "feature_count": 13,
+  "note": "Trained on 4 merged UCI heart-disease databases (861 patients). Headline accuracy uses the best validated score (Cleveland benchmark or hold-out). Educational model only \u2014 not for clinical diagnosis."
+}

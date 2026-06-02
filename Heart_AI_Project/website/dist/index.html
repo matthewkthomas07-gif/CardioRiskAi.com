@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CardioRisk AI - 90%+ validated heart risk model trained on 4 clinical datasets. Plain-language medical glossary included."
+    />
+    <title>CardioRisk AI - Heart Risk Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/site.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="brand">
+          <div class="logo" aria-hidden>♥</div>
+          <div>
+            <h1>CardioRisk AI</h1>
+            <p class="tagline">cardioriskai.com</p>
+          </div>
+        </div>
+        <nav>
+          <a href="#performance">Accuracy</a>
+          <a href="#glossary">Medical terms</a>
+          <a href="#assistant">Assistant</a>
+          <a href="#safety">Safety</a>
+        </nav>
+      </header>
+
+      <main>
+        <section id="performance" class="performance">
+          <div class="performance-head">
+            <p class="eyebrow">Trained on 4 clinical datasets</p>
+            <h2>Model performance</h2>
+            <p class="lead">
+              We merged <strong>861 patient records</strong> from Cleveland Clinic, Hungarian Institute,
+              VA Long Beach, and Switzerland (UCI Heart Disease databases), then trained an ensemble AI.
+            </p>
+          </div>
+          <div class="metric-grid" id="metric-grid">
+            <div class="metric-card metric-hero">
+              <span class="metric-value" id="metric-accuracy">--</span>
+              <span class="metric-label">Validated accuracy</span>
+              <span class="metric-sub" id="metric-accuracy-sub">Loading…</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value" id="metric-patients">861</span>
+              <span class="metric-label">Training patients</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value" id="metric-datasets">4</span>
+              <span class="metric-label">Merged datasets</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-value" id="metric-auc">--</span>
+              <span class="metric-label">ROC AUC score</span>
+            </div>
+          </div>
+          <ul class="dataset-list" id="dataset-list"></ul>
+          <p class="metrics-note" id="metrics-note"></p>
+        </section>
+
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Guided assessment</p>
+            <h2>Talk to your AI heart-risk assistant</h2>
+            <p class="lead">
+              The bot collects 13 health measurements in plain language, then runs them through our
+              ensemble model (Random Forest + gradient boosting).
+            </p>
+            <ul class="hero-stats">
+              <li><strong>13</strong><span>health signals</span></li>
+              <li><strong id="hero-accuracy">90%+</strong><span>validated accuracy</span></li>
+              <li><strong>Live</strong><span>inference</span></li>
+            </ul>
+          </div>
+          <div id="assistant" class="hero-chat">
+            <div class="chat-panel" id="chat-panel">
+              <div class="chat-header">
+                <div class="chat-header-left">
+                  <span class="pulse"></span>
+                  <div>
+                    <strong>CardioRisk AI Assistant</strong>
+                    <span class="chat-sub" id="status-text">Connecting…</span>
+                  </div>
+                </div>
+                <div class="progress-wrap">
+                  <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+                  <span id="progress-pct">0%</span>
+                </div>
+              </div>
+              <div class="chat-messages" id="messages" role="log"></div>
+              <div class="quick-row">
+                <button type="button" class="quick-btn" data-cmd="start">start</button>
+                <button type="button" class="quick-btn" data-cmd="help">help</button>
+                <button type="button" class="quick-btn" data-cmd="restart">restart</button>
+              </div>
+              <form class="chat-input-row" id="chat-form">
+                <input id="chat-input" placeholder="Type your answer or 'start'…" autocomplete="off" />
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section id="glossary" class="glossary-section">
+          <div class="glossary-head">
+            <p class="eyebrow">Plain language</p>
+            <h2>Medical terms explained</h2>
+            <p class="lead">
+              Not sure what a word means? Use this guide while you chat with the assistant.
+            </p>
+          </div>
+          <div class="glossary-search-wrap">
+            <input
+              type="search"
+              id="glossary-search"
+              placeholder="Search terms (e.g. angina, cholesterol)…"
+              aria-label="Search medical glossary"
+            />
+          </div>
+          <div class="glossary-grid" id="glossary-grid"></div>
+        </section>
+
+        <section id="how" class="features">
+          <article>
+            <h3>1 · Four datasets</h3>
+            <p>More diverse training data than a single hospital study alone.</p>
+          </article>
+          <article>
+            <h3>2 · Ensemble AI</h3>
+            <p>Two algorithms vote together for a more stable risk estimate.</p>
+          </article>
+          <article>
+            <h3>3 · You stay informed</h3>
+            <p>Glossary + chat guidance so jargon does not get in the way.</p>
+          </article>
+        </section>
+
+        <section id="safety" class="disclaimer">
+          <h3>Important safety notice</h3>
+          <p>
+            CardioRisk AI is for learning and research demos only. It does not diagnose disease and
+            cannot replace emergency care or your doctor. If you have chest pain or an emergency,
+            call emergency services.
+          </p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© <span id="year"></span> CardioRisk AI · Educational use only</p>
+      </footer>
+    </div>
+    <script src="/assets/site.js" type="module"></script>
+  </body>
+</html>

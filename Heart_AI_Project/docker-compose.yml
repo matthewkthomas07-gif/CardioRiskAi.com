@@ -1,0 +1,8 @@
+services:
+  cardioriskai:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - CORS_ORIGINS=https://cardioriskai.com,https://www.cardioriskai.com
+    restart: unless-stopped
