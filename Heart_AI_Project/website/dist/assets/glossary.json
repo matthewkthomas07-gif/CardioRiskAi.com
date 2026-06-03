@@ -1,0 +1,98 @@
+[
+  {
+    "term": "Cardiovascular risk",
+    "plain": "How likely the model thinks heart or blood-vessel disease may be present, shown as a percentage. This is not a doctor's diagnosis.",
+    "how_to_count": "You do not calculate this yourself. After you answer the assistant's questions, the model shows a percentage.",
+    "at_home": true
+  },
+  {
+    "term": "Age",
+    "plain": "Your age in years. Older age can increase heart-disease risk in population studies.",
+    "how_to_count": "Count full years since your birth date. Example: if you were born in 1970 and today is 2026, enter 56.",
+    "at_home": true
+  },
+  {
+    "term": "Sex",
+    "plain": "Whether you are female or male for this assessment. Research datasets group risk patterns this way.",
+    "how_to_count": "Reply female/woman or male/man. The bot maps this internally; you never need to enter 0 or 1.",
+    "at_home": true
+  },
+  {
+    "term": "Chest pain type",
+    "plain": "What kind of chest discomfort you have, if any.",
+    "how_to_count": "Choose the best match: (1) tight pain with exertion that eases with rest — typical angina; (2) chest pain that does not fit the classic pattern; (3) pain that does not feel like angina; (4) no chest pain. If unsure, pick the closest option.",
+    "at_home": true
+  },
+  {
+    "term": "Systolic blood pressure",
+    "plain": "The top number when blood pressure is measured (pressure when the heart beats). Example: 120 in \"120/80.\"",
+    "how_to_count": "Use a home blood pressure cuff after sitting quietly 5 minutes. Take two readings 1 minute apart and use the average top number. If you do not have a cuff, use your most recent clinic reading.",
+    "at_home": true
+  },
+  {
+    "term": "Cholesterol",
+    "plain": "A blood fat measured in mg/dL. High values over time are linked to artery plaque.",
+    "how_to_count": "Use the total or LDL number from a lab blood test (fasting is best). Home finger-stick kits rarely measure full cholesterol — if you have no recent lab result (past 12 months), type skip and the bot will use a typical value; for real care, ask your doctor for a lipid panel.",
+    "at_home": false
+  },
+  {
+    "term": "Fasting blood sugar",
+    "plain": "Whether blood sugar was over 120 mg/dL after not eating overnight.",
+    "how_to_count": "With a home glucose meter: no food for 8+ hours, then test in the morning. Over 120 mg/dL = yes. No meter? Use your latest doctor lab; if unknown, answer no.",
+    "at_home": true
+  },
+  {
+    "term": "Resting heart tracing (ECG)",
+    "plain": "What a resting ECG showed, if you have had one.",
+    "how_to_count": "You cannot read this reliably at home. Use the wording on your ECG report: normal; ST-T abnormality; or left ventricular hypertrophy. No recent ECG? Type skip — only see a doctor if you need heart testing for symptoms.",
+    "at_home": false
+  },
+  {
+    "term": "Maximum heart rate",
+    "plain": "The highest heart rate reached during exertion. Lower than expected for your age can sometimes signal strain.",
+    "how_to_count": "Best: number from a treadmill or stress test. At home: after brisk stairs for 1 minute, count your pulse for 15 seconds and multiply by 4. Rough estimate: 220 minus your age. Enter the highest number you reach with effort.",
+    "at_home": true
+  },
+  {
+    "term": "Chest pain during exercise",
+    "plain": "Whether you get chest pain or pressure when walking fast, climbing stairs, or exercising.",
+    "how_to_count": "Answer yes if you have felt chest pain or pressure during physical effort in the past months; otherwise no.",
+    "at_home": true
+  },
+  {
+    "term": "ST depression (exercise ECG)",
+    "plain": "A number from an exercise stress test showing how much the ECG pattern dips under exertion.",
+    "how_to_count": "You cannot measure this at home. It is on a stress-test printout (often labeled ST depression or Oldpeak). No test? Type skip. Do not delay urgent chest pain — call emergency services.",
+    "at_home": false
+  },
+  {
+    "term": "ST slope during exercise",
+    "plain": "Shape of the heart tracing during peak exercise: upsloping, flat, or downsloping.",
+    "how_to_count": "Only on a stress-test report. Upsloping is commonest. No report? Type skip. A clinician orders this test when needed.",
+    "at_home": false
+  },
+  {
+    "term": "Blocked heart arteries (imaging)",
+    "plain": "How many major heart arteries looked narrowed on a hospital imaging test.",
+    "how_to_count": "Comes from angiography or similar imaging — only a hospital can measure this. No imaging? Type skip. See a doctor if you have ongoing chest pain or shortness of breath.",
+    "at_home": false
+  },
+  {
+    "term": "Blood-flow scan (stress imaging)",
+    "plain": "Result of a nuclear or perfusion scan showing blood flow to the heart muscle.",
+    "how_to_count": "Listed on a specialist report as normal, fixed defect, or reversible defect. Not available at home. No scan? Type skip.",
+    "at_home": false
+  },
+  {
+    "term": "Angina",
+    "plain": "Chest pain or pressure, often from reduced blood flow to the heart muscle.",
+    "how_to_count": "Notice when pain happens: with activity (exertion) vs at rest. Describe duration and what relieves it (rest, nitroglycerin). The bot asks about exercise-related chest pain separately.",
+    "at_home": true
+  },
+  {
+    "term": "Machine learning model",
+    "plain": "Software trained on many past patient records to estimate risk from your answers.",
+    "how_to_count": "No action needed — the assistant runs the model after your questions.",
+    "at_home": true
+  }
+]

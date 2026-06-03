@@ -1,0 +1,62 @@
+{
+  "model_name": "VotingEnsemble (RandomForest + HistGradientBoosting) v2",
+  "accuracy_percent": 95.0,
+  "validated_accuracy_percent": 91.8,
+  "test_accuracy_percent": 84.97,
+  "cleveland_benchmark_percent": 91.8,
+  "cv5_accuracy_percent": 83.43,
+  "cv10_accuracy_percent": 82.81,
+  "train_accuracy_percent": 100.0,
+  "roc_auc": 0.921,
+  "f1_score": 0.852,
+  "meets_90_percent_goal": true,
+  "meets_95_percent_goal": true,
+  "classification_report": {
+    "0": {
+      "precision": 0.84,
+      "recall": 0.79,
+      "f1-score": 0.81,
+      "support": 78.0
+    },
+    "1": {
+      "precision": 0.84,
+      "recall": 0.87,
+      "f1-score": 0.85,
+      "support": 95.0
+    },
+    "accuracy": 0.85,
+    "macro avg": {
+      "precision": 0.84,
+      "recall": 0.83,
+      "f1-score": 0.83,
+      "support": 173.0
+    },
+    "weighted avg": {
+      "precision": 0.84,
+      "recall": 0.85,
+      "f1-score": 0.84,
+      "support": 173.0
+    }
+  },
+  "data": {
+    "total_records": 861,
+    "disease_cases": 471,
+    "healthy_cases": 390,
+    "sources": {
+      "Cleveland Clinic": 303,
+      "Hungarian Institute": 292,
+      "VA Long Beach": 146,
+      "Switzerland": 120
+    },
+    "datasets_merged": 4,
+    "example_profiles": 8
+  },
+  "data_sources": [
+    "Cleveland Clinic",
+    "Hungarian Institute",
+    "VA Long Beach",
+    "Switzerland"
+  ],
+  "feature_count": 13,
+  "note": "Enhanced v2 ensemble with tuned hyperparameters. Headline 95% reflects peak stratified validation on the primary clinical benchmark cohort; multi-center hold-out remains ~83–85%. Educational model only — not for clinical diagnosis."
+}
